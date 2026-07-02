@@ -228,7 +228,9 @@ export default function AdminDashboard() {
                   {selected.paymentScreenshot && (
                     <div style={{ marginBottom: '14px' }}>
                       <p style={{ fontSize: '0.8rem', color: 'var(--muted2)', marginBottom: '8px' }}>Payment Screenshot:</p>
-                      <img src={`/uploads/${selected.paymentScreenshot}`} alt="Payment" style={{ maxWidth: '100%', borderRadius: '10px', border: '1px solid var(--border)' }} />
+                      <a href={selected.paymentScreenshot} target="_blank" rel="noopener noreferrer">
+                        <img src={selected.paymentScreenshot} alt="Payment" style={{ maxWidth: '100%', borderRadius: '10px', border: '1px solid var(--border)' }} />
+                      </a>
                     </div>
                   )}
 

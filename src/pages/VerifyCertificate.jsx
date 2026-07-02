@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import axios from 'axios'
 import Footer from '../components/Footer'
+// import logo from '../assets/logo.png'
 
 export default function VerifyCertificate() {
   const [certId, setCertId] = useState('')
@@ -40,7 +41,7 @@ export default function VerifyCertificate() {
                 <label>Certificate ID</label>
                 <input
                   type="text"
-                  placeholder="e.g. TMI/INT/2026/0001"
+                  placeholder="e.g. TMI/INT/2026/01"
                   value={certId}
                   onChange={e => setCertId(e.target.value)}
                   required
@@ -64,7 +65,11 @@ export default function VerifyCertificate() {
 
           {result && (
             <div className="cert-result">
+              {/* <img src={logo} alt="TrackMap Logo" className="c-logo"
+              style={{ width: '80px', height: '80px',  objectFit: 'contain', display: "block", margin: "0 auto 20px",borderRadius: "50%", background: "var(--bg)", padding: "12px", boxShadow: "0 2px 6px rgba(0,0,0,0.1)" }}
+              /> */}
               <div className="cert-check">🎓</div>
+
               <h3>✅ Certificate Verified!</h3>
               <p style={{ color: 'var(--muted2)', fontSize: '0.85rem' }}>
                 This certificate was officially issued by TrackMap Innovations Pvt. Ltd.

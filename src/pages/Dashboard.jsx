@@ -4,6 +4,13 @@ import { useAuth } from '../context/AuthContext'
 import api from '../context/api'
 import whatsappQR from '../assets/whatsapp_qr.jpeg'
 
+// ✅ Cloudinary URL को force-download URL में बदलने के लिए
+function getCertDownloadUrl(url) {
+  if (!url) return ""
+  if (url.includes("fl_attachment")) return url
+  return url.replace("/upload/", "/upload/fl_attachment/")
+}
+
 function AppCard({ app }) {
   const step = app.status === 'approved' ? 4 : app.paymentStatus === 'verified' ? 3 : app.paymentStatus === 'submitted' ? 2 : 1
 
@@ -111,11 +118,12 @@ function AppCard({ app }) {
           </p>
 
           <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
-            {/* ✅ Download button - only shows when certificate file is uploaded */}
             {app.certificateFile ? (
               <a
-                href={`/uploads/${app.certificateFile}`}
-                download={`Certificate_${app.fullName}_${app.domain}${app.certificateFile.substring(app.certificateFile.lastIndexOf('.'))}`}
+                href={getCertDownloadUrl(app.certificateFile)}
+                download={`Certificate_${app.fullName}_${app.domain}`}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="btn btn-success btn-sm"
               >
                 ⬇️ Download Certificate
