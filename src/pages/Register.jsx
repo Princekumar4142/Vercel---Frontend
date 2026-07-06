@@ -8,6 +8,8 @@ export default function Register() {
   const [form, setForm] = useState({ fullName: '', email: '', phone: '', password: '', confirmPassword: '' })
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
+  const [showPassword, setShowPassword] = useState(false)
+  const [showConfirm, setShowConfirm] = useState(false)
   const { login } = useAuth()
   const navigate = useNavigate()
 
@@ -38,7 +40,7 @@ export default function Register() {
         <div className="auth-logo">
           <img src={logo} alt="TrackMap" />
           <h2>Create Your Account</h2>
-          <p>Join TrackMap Internship Program</p>
+          <p>Join TrackMap Internship Program — ₹199 only</p>
         </div>
 
         {error && <div className="alert alert-error">❌ {error}</div>}
@@ -55,17 +57,61 @@ export default function Register() {
             </div>
             <div className="form-group">
               <label>Phone Number</label>
-              <input type="tel" placeholder="1234567890" value={form.phone} onChange={set('phone')} required />
+              <input type="tel" placeholder="9876543210" value={form.phone} onChange={set('phone')} required />
             </div>
           </div>
           <div className="form-row">
             <div className="form-group">
               <label>Password</label>
-              <input type="password" placeholder="Min 6 characters" value={form.password} onChange={set('password')} required />
+              <div style={{ position: 'relative' }}>
+                <input
+                  type={showPassword ? 'text' : 'password'}
+                  placeholder="Min 6 characters"
+                  value={form.password}
+                  onChange={set('password')}
+                  required
+                  style={{ paddingRight: '44px' }}
+                />
+                <button
+                  type="button"
+                  onClick={() => setShowPassword(!showPassword)}
+                  style={{
+                    position: 'absolute', right: '12px', top: '50%',
+                    transform: 'translateY(-50%)',
+                    background: 'none', border: 'none',
+                    cursor: 'pointer', color: 'var(--muted2)',
+                    fontSize: '1.1rem', padding: '0'
+                  }}
+                >
+                  {showPassword ? '🙈' : '👁️'}
+                </button>
+              </div>
             </div>
             <div className="form-group">
               <label>Confirm Password</label>
-              <input type="password" placeholder="Repeat password" value={form.confirmPassword} onChange={set('confirmPassword')} required />
+              <div style={{ position: 'relative' }}>
+                <input
+                  type={showConfirm ? 'text' : 'password'}
+                  placeholder="Repeat password"
+                  value={form.confirmPassword}
+                  onChange={set('confirmPassword')}
+                  required
+                  style={{ paddingRight: '44px' }}
+                />
+                <button
+                  type="button"
+                  onClick={() => setShowConfirm(!showConfirm)}
+                  style={{
+                    position: 'absolute', right: '12px', top: '50%',
+                    transform: 'translateY(-50%)',
+                    background: 'none', border: 'none',
+                    cursor: 'pointer', color: 'var(--muted2)',
+                    fontSize: '1.1rem', padding: '0'
+                  }}
+                >
+                  {showConfirm ? '🙈' : '👁️'}
+                </button>
+              </div>
             </div>
           </div>
           <button type="submit" className="btn btn-primary btn-full" disabled={loading}>
