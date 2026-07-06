@@ -39,7 +39,7 @@ export default function AboutFounder() {
                   <a href="https://www.linkedin.com/in/prince-kumar-b74179314" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-sm">
                     🔗 LinkedIn Profile
                   </a>
-                  <a href="mailto:internship@trackmapinnovations.com" className="btn btn-outline btn-sm">
+                  <a href="mailto:trackmapinnovationspvtltd@gmail.com" className="btn btn-outline btn-sm">
                     📧 Contact
                   </a>
                 </div>
