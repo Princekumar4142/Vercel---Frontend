@@ -26,7 +26,7 @@ function ProtectedRoute({ children, adminRequired = false }) {
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -35,15 +35,15 @@ export default function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/verify" element={<VerifyCertificate />} />
+        <Route path="/about-founder" element={<AboutFounder />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-conditions" element={<TermsConditions />} />
+        <Route path="/disclaimer" element={<Disclaimer />} />
         <Route path="/apply" element={<ProtectedRoute><Apply /></ProtectedRoute>} />
         <Route path="/payment/:appId" element={<ProtectedRoute><Payment /></ProtectedRoute>} />
         <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
         <Route path="/admin" element={<ProtectedRoute adminRequired><AdminDashboard /></ProtectedRoute>} />
         <Route path="*" element={<Navigate to="/" />} />
-        <Route path="/about-founder" element={<AboutFounder />} />
-<Route path="/privacy-policy" element={<PrivacyPolicy />} />
-<Route path="/terms-conditions" element={<TermsConditions />} />
-<Route path="/disclaimer" element={<Disclaimer />} />
       </Routes>
     </BrowserRouter>
   )
