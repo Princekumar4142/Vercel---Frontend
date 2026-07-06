@@ -18,7 +18,7 @@ export default function AboutFounder() {
   }}
 >
   <img
-    src="/src/assets/founder.png"
+    src="https://i.ibb.co/cKPQ9CqB/founder.png"
     alt="Prince Kumar"
     style={{
       width: '100%',
