@@ -22,7 +22,7 @@ export default function PrivacyPolicy() {
               { title: '6. Your Rights', content: 'You have the right to access, correct, or request deletion of your personal data at any time by contacting us at trackmapinnovationspvtltd@gmail.com. We will respond within 7 working days.' },
               { title: '7. Cookies', content: 'Our website may use cookies to improve user experience. These are small files stored on your browser and do not contain any personally identifiable information.' },
               { title: '8. Changes to This Policy', content: 'We reserve the right to update this Privacy Policy at any time. Continued use of our platform after changes constitutes your acceptance of the revised policy.' },
-              { title: '9. Contact Us', content: 'If you have any questions, please contact us at: internship@trackmapinnovations.com' },
+              { title: '9. Contact Us', content: 'If you have any questions, please contact us at: trackmapinnovationspvtltd@gmail.com' },
             ].map((item) => (
               <div key={item.title} style={{ marginBottom: '24px' }}>
                 <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '1rem', marginBottom: '8px' }}>{item.title}</h3>
