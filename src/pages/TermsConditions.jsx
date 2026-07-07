@@ -24,7 +24,7 @@ export default function TermsConditions() {
               { title: '8. Intellectual Property', content: 'Any work created during the internship remains the intellectual property of TrackMap Innovations Private Limited unless explicitly stated otherwise.' },
               { title: '9. Limitation of Liability', content: 'TrackMap Innovations shall not be liable for any indirect or consequential damages. Our total liability shall not exceed the registration fee paid.' },
               { title: '10. Governing Law', content: 'These Terms are governed by the laws of India. Any disputes shall be subject to the exclusive jurisdiction of courts in Bihar, India.' },
-              { title: '11. Contact', content: 'For queries, contact us at: internship@trackmapinnovations.com' },
+              { title: '11. Contact', content: 'For queries, contact us at: trackmapinnovationspvtltd@gmail.com' },
             ].map((item) => (
               <div key={item.title} style={{ marginBottom: '24px' }}>
                 <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '1rem', marginBottom: '8px' }}>{item.title}</h3>
