@@ -39,7 +39,7 @@ export default function Disclaimer() {
             </div>
             <div>
               <h3 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '1rem', marginBottom: '8px' }}>7. Contact</h3>
-              <p style={{ color: 'var(--muted2)', lineHeight: 1.8, fontSize: '0.9rem' }}>For questions: internship@trackmapinnovations.com</p>
+              <p style={{ color: 'var(--muted2)', lineHeight: 1.8, fontSize: '0.9rem' }}>For questions: trackmapinnovationspvtltd@gmail.com</p>
             </div>
           </div>
         </div>
