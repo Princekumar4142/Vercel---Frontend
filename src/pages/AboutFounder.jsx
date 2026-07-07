@@ -8,25 +8,13 @@ export default function AboutFounder() {
 
           <div className="card" style={{ marginBottom: '28px', padding: '40px' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '32px', flexWrap: 'wrap' }}>
-              <div
-  style={{
-    width: '130px',
-    height: '130px',
-    borderRadius: '50%',
-    overflow: 'hidden',
-    flexShrink: 0,
-  }}
->
-  <img
-    src="https://i.ibb.co/cKPQ9CqB/founder.png"
-    alt="Prince Kumar"
-    style={{
-      width: '100%',
-      height: '100%',
-      objectFit: 'cover',
-    }}
-  />
-</div>
+              <div style={{ width: '130px', height: '130px', borderRadius: '50%', overflow: 'hidden', flexShrink: 0 }}>
+                <img
+                  src="https://i.ibb.co/cKPQ9CqB/founder.png"
+                  alt="Prince Kumar"
+                  style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                />
+              </div>
               <div>
                 <span className="eyebrow">Founder & CEO</span>
                 <h1 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(1.6rem,4vw,2.2rem)', fontWeight: 800, letterSpacing: '-0.02em', marginBottom: '8px' }}>
@@ -47,59 +35,29 @@ export default function AboutFounder() {
             </div>
           </div>
 
-        <div className="card" style={{ marginBottom: '28px', padding: '36px' }}>
-  <h2
-    style={{
-      fontFamily: 'var(--font-display)',
-      fontWeight: 800,
-      fontSize: '1.3rem',
-      marginBottom: '16px'
-    }}
-  >
-    About Me
-  </h2>
-
-  <p
-    style={{
-      color: 'var(--muted2)',
-      lineHeight: 1.8,
-      marginBottom: '14px',
-      fontSize: '0.95rem'
-    }}
-  >
-    I am Prince Kumar, a final-year Computer Science student and the Founder & CEO of
-    TrackMap Innovations Private Limited, a DPIIT-recognized technology startup based
-    in Bihar, India. I am passionate about technology, software development, and
-    creating innovative digital solutions that solve real-world problems.
-  </p>
-
-  <p
-    style={{
-      color: 'var(--muted2)',
-      lineHeight: 1.8,
-      marginBottom: '14px',
-      fontSize: '0.95rem'
-    }}
-  >
-    Through TrackMap Innovations, my mission is to bridge the gap between academic
-    learning and industry requirements by providing students with practical experience,
-    real-world projects, and internship opportunities that help them develop valuable
-    technical and professional skills.
-  </p>
-
-  <p
-    style={{
-      color: 'var(--muted2)',
-      lineHeight: 1.8,
-      fontSize: '0.95rem'
-    }}
-  >
-    I believe every student deserves access to quality learning opportunities,
-    mentorship, and industry exposure, regardless of their background or location.
-    My vision is to build impactful technology solutions while empowering the next
-    generation of professionals through innovation, learning, and hands-on experience.
-  </p>
-</div>
+          <div className="card" style={{ marginBottom: '28px', padding: '36px' }}>
+            <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '1.3rem', marginBottom: '16px' }}>
+              About Me
+            </h2>
+            <p style={{ color: 'var(--muted2)', lineHeight: 1.8, marginBottom: '14px', fontSize: '0.95rem' }}>
+              I am Prince Kumar, a final-year Computer Science student and the Founder & CEO of
+              TrackMap Innovations Private Limited, a DPIIT-recognized technology startup based
+              in Bihar, India. I am passionate about technology, software development, and
+              creating innovative digital solutions that solve real-world problems.
+            </p>
+            <p style={{ color: 'var(--muted2)', lineHeight: 1.8, marginBottom: '14px', fontSize: '0.95rem' }}>
+              Through TrackMap Innovations, my mission is to bridge the gap between academic
+              learning and industry requirements by providing students with practical experience,
+              real-world projects, and internship opportunities that help them develop valuable
+              technical and professional skills.
+            </p>
+            <p style={{ color: 'var(--muted2)', lineHeight: 1.8, fontSize: '0.95rem' }}>
+              I believe every student deserves access to quality learning opportunities,
+              mentorship, and industry exposure, regardless of their background or location.
+              My vision is to build impactful technology solutions while empowering the next
+              generation of professionals through innovation, learning, and hands-on experience.
+            </p>
+          </div>
 
           <div className="card" style={{ marginBottom: '28px', padding: '36px' }}>
             <h2 style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '1.3rem', marginBottom: '20px' }}>Company Details</h2>
@@ -111,7 +69,7 @@ export default function AboutFounder() {
                 ['DPIIT Cert. No.', 'DIPP229619'],
                 ['CIN', 'U74909BR2025PTC075493'],
                 ['Recognition', 'Startup Bihar · MSME · DPIIT'],
-                ['Email', 'internship@trackmapinnovations.com'],
+                ['Email', 'trackmapinnovationspvtltd@gmail.com'],
                 ['LinkedIn', 'Prince Kumar'],
               ].map(([label, value]) => (
                 <div key={label} style={{ padding: '10px 0', borderBottom: '1px solid var(--border)' }}>
