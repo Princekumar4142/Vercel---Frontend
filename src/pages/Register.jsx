@@ -30,7 +30,7 @@ export default function Register() {
       return setError('Please enter a valid email address.')
     }
     if (!validatePhone(form.phone)) {
-      return setError('Please enter a valid 10-digit Indian mobile number (starting with 6-9).')
+      return setError('Please enter a valid 10-digit Indian mobile number.')
     }
     if (form.password !== form.confirmPassword) {
       return setError('Passwords do not match.')
@@ -62,7 +62,7 @@ export default function Register() {
         <div className="auth-logo">
           <img src={logo} alt="TrackMap" />
           <h2>Create Your Account</h2>
-          <p>Join TrackMap Internship Program — ₹199 only</p>
+          <p>Join TrackMap Internship Program</p>
         </div>
 
         {error && <div className="alert alert-error">❌ {error}</div>}
@@ -96,7 +96,7 @@ export default function Register() {
                 />
                 <button type="button" onClick={() => setShowPassword(!showPassword)}
                   style={{ position: 'absolute', right: '12px', top: '50%', transform: 'translateY(-50%)', background: 'none', border: 'none', cursor: 'pointer', color: 'var(--muted2)', fontSize: '1.1rem', padding: '0' }}>
-                  {showPassword ? '🙈' : '👁️'}
+                  {showPassword ? '👁️' : '🙈'}
                 </button>
               </div>
             </div>
@@ -113,7 +113,7 @@ export default function Register() {
                 />
                 <button type="button" onClick={() => setShowConfirm(!showConfirm)}
                   style={{ position: 'absolute', right: '12px', top: '50%', transform: 'translateY(-50%)', background: 'none', border: 'none', cursor: 'pointer', color: 'var(--muted2)', fontSize: '1.1rem', padding: '0' }}>
-                  {showConfirm ? '🙈' : '👁️'}
+                  {showConfirm ? '👁️' : '🙈'}
                 </button>
               </div>
             </div>
