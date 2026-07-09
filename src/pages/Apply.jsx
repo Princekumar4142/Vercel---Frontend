@@ -245,7 +245,7 @@ export default function Apply() {
             </div>
 
             <div className="alert alert-info">
-              ℹ️ After submitting this form, you'll be directed to complete the ₹199 payment.
+              ℹ️ After submitting this form, you'll be directed to complete the ₹699 payment.
             </div>
 
             <button type="submit" className="btn btn-primary btn-full" disabled={loading}>
