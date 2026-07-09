@@ -101,7 +101,7 @@ export default function Payment() {
           <div className="card qr-card">
             <span className="eyebrow" style={{ marginBottom: '16px', display: 'block' }}>📱 Scan & Pay</span>
             <img src={qrImage} alt="PhonePe QR Code" />
-            <div className="qr-amount">₹199</div>
+            <div className="qr-amount">₹699</div>
             <p style={{ color: 'var(--muted2)', fontSize: '0.85rem' }}>One-time Program Registration Fee</p>
             <p style={{ fontSize: '0.78rem', color: 'var(--muted)', marginTop: '6px' }}>
               Pay using PhonePe, Google Pay, Paytm, or any UPI app
