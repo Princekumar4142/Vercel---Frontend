@@ -70,7 +70,7 @@ export default function Login() {
                   fontSize: '1.1rem', padding: '0'
                 }}
               >
-                {showPassword ? '🙈' : '👁️'}
+                {showPassword ? '👁️' : '🙈'}
               </button>
             </div>
           </div>
