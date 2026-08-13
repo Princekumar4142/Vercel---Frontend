@@ -45,6 +45,7 @@ const branches = [
 const semesters = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'Graduated']
 
 const durations = [
+  '15 Days',
   '2 Weeks',
   '4 Weeks (1 Month)',
   '6 Weeks (1.5 Months)',
@@ -245,7 +246,7 @@ export default function Apply() {
             </div>
 
             <div className="alert alert-info">
-              ℹ️ After submitting this form, you'll be directed to complete the ₹699 payment.
+              ℹ️ After submitting this form, you'll be directed to complete the ₹199 payment.
             </div>
 
             <button type="submit" className="btn btn-primary btn-full" disabled={loading}>
