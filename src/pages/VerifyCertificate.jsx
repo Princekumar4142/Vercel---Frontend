@@ -14,7 +14,9 @@ export default function VerifyCertificate() {
     if (!certId.trim()) return
     setLoading(true); setError(''); setResult(null)
     try {
-      const res = await axios.get(`https://vercel-backend-533t.onrender.com/api/verify-cert?certId=${encodeURIComponent(certId.trim())}`)
+      const backendBase = import.meta.env.VITE_API_URL || 'https://vercel-backend-1-n7af.onrender.com/api'
+      const cleanBase = backendBase.replace(/\/$/, '')
+      const res = await axios.get(`${cleanBase}/verify-cert?certId=${encodeURIComponent(certId.trim())}`)
       setResult(res.data.data)
     } catch (err) {
       setError(err.response?.data?.message || 'Certificate not found or invalid.')
