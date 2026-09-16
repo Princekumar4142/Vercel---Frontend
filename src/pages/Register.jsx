@@ -137,12 +137,12 @@ export default function Register() {
           <form onSubmit={handleSendOtp}>
             <div className="form-group">
               <label>Full Name</label>
-              <input type="text" placeholder="Rahul Kumar" value={form.fullName} onChange={set('fullName')} required />
+              <input type="text" placeholder="Prince Kumar" value={form.fullName} onChange={set('fullName')} required />
             </div>
             <div className="form-row">
               <div className="form-group">
                 <label>Email Address</label>
-                <input type="email" placeholder="your@email.com" value={form.email} onChange={set('email')} required />
+                <input type="email" placeholder="prince@gmail.com" value={form.email} onChange={set('email')} required />
               </div>
               <div className="form-group">
                 <label>Phone Number</label>
